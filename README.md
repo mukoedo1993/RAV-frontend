@@ -2,7 +2,7 @@ Part of my notes:
 https://jsfiddle.net/mukoedo1993/ge0pvo4n/151<br>
 
 Second part:
-https://jsfiddle.net/mukoedo1993/e6vkgs7w/6/<br>
+https://jsfiddle.net/mukoedo1993/e6vkgs7w/120/<br>
 
 Third part:
 https://jsfiddle.net/mukoedo1993/dm6aLh5r/62/
