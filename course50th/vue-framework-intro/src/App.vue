@@ -1,6 +1,7 @@
 <template>
   <div id="app">
       <app-user></app-user>
+       <p>This is a test, test name is hehe!</p>
   </div>
 </template>
 

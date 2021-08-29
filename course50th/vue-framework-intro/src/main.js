@@ -6,6 +6,6 @@ import User from './assets/components/User.vue' //register our main.js file.
 Vue.component('app-user', User)
 
 new Vue({
-  el: '#app',
+  el: '#app', //bind to the element with the id, app
   render: h => h(App)
 })
