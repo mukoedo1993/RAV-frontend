@@ -6,3 +6,8 @@
 
 <button (click)="name = 'Anna'">Change Names.</button> <!--parentheses is a syntax in angular. On this line, we execute a inline JS statement.-->
 <button (click)="onChangeName()">Change Names.</button> <!--In this line, we call a function.-->
+<button (click)="onAddElement()">Add numbers.</button>
+
+<ul>
+  <li *ngFor="let el of elements">Element {{ el }}</li>
+</ul>

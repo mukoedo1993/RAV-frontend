@@ -10,8 +10,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-framework-intro';
   name ='Shijunn O';
+  elements: number[] = []; //So, it is an array of numbers(TS is a strongly-typed language.)
 
   onChangeName() {
     this.name = 'Tom Wang';
+  }
+
+  onAddElement() {
+    this.elements.push(this.elements.length + 1)
   }
 }
