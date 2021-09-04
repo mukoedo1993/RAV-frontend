@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-framework-intro';
+  name ='Shijunn O';
+
+  onChangeName() {
+    this.name = 'Tom Wang';
+  }
 }
