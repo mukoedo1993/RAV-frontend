@@ -3,10 +3,13 @@ import { BrowserModule } from '@angular/platform-browser'; //core functionality 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UsernameComponent } from './username/username.component'
+
 //all components in total.
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsernameComponent
   ],
   imports: [ //Some advanced concepts, not introduced in this RAV course.
     BrowserModule,
