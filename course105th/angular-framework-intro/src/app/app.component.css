@@ -1,0 +1,7 @@
+/*By default, styles here will only apply to the apps component.
+Styles are encapsulated, */
+
+.updated {
+    color: white;
+    background-color: yellow;
+}

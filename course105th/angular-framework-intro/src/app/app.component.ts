@@ -17,6 +17,10 @@ export class AppComponent {
   }
 
   onAddElement() {
-    this.elements.push(this.elements.length + 1)
+    this.elements.push(this.elements.length + 1);
+  }
+
+  getColor(element: number) { //https://stackoverflow.com/questions/43064221/typescript-ts7006-parameter-xxx-implicitly-has-an-any-type
+    return element % 2 == 0 ? 'green':'red';
   }
 }

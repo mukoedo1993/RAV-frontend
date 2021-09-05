@@ -1,4 +1,4 @@
-<p>
+<p [ngClass]="{updated: name !='Shijunn O'}">
  {{ name }}
 </p>
 
@@ -9,5 +9,7 @@
 <button (click)="onAddElement()">Add numbers.</button>
 
 <ul>
-  <li *ngFor="let el of elements">Element {{ el }}</li>
+  <li *ngFor="let el of elements"
+      [id]="'element' + el"
+      [ngStyle]="{backgroundColor: getColor(el)}">Element {{ el }}</li>
 </ul>
