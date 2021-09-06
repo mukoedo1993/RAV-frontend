@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core'; 
+import {FormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser'; //core functionality to run our apps, and export some basic features we probably use in most of our apps.
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +14,8 @@ import { UsernameComponent } from './username/username.component'
   ],
   imports: [ //Some advanced concepts, not introduced in this RAV course.
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

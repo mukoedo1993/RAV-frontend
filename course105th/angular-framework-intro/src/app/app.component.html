@@ -1,6 +1,6 @@
-<app-username [username]="'Chris'"> </app-username>
-<app-username [username]="'Anna'"> </app-username>
-
+<app-username [username]="'Chris'" (userClicked)="onUserWasClicked($event)"> </app-username>
+<app-username [username]="'Anna'" (userClicked)="onUserWasClicked($event)"> </app-username>
+<!--$event  reserved keyword provided by Angular, which will give you any data the event ships.-->
 
 <p [ngClass]="{updated: name !='Shijunn O'}"> <!--if the boolean value after the -->
  {{ name }}
@@ -17,3 +17,8 @@
       [id]="'element' + el"
       [ngStyle]="{backgroundColor: getColor(el)}">Element {{ el }}</li>
 </ul>
+<input type="text" [(ngModel)]="message"> 
+<!--ngModel: We react to every keystroke, we react to an event. But at the same time, we updated the value of input with the value user entered.
+[(...)] two-way binding
+-->
+<p>{{ message }}</p>

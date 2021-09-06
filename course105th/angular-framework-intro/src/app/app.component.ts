@@ -12,6 +12,9 @@ export class AppComponent {
   name ='Shijunn O';
   elements: number[] = []; //So, it is an array of numbers(TS is a strongly-typed language.)
 
+
+  message = '';
+
   onChangeName() {
     this.name = 'Tom Wang';
   }
@@ -22,5 +25,9 @@ export class AppComponent {
 
   getColor(element: number) { //https://stackoverflow.com/questions/43064221/typescript-ts7006-parameter-xxx-implicitly-has-an-any-type
     return element % 2 == 0 ? 'green':'red';
+  }
+
+  onUserWasClicked (usrName: string) {
+    alert(usrName)
   }
 }
